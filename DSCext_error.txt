@@ -1,0 +1,7 @@
+1:35:38 PM - VM has reported a failure when processing extension 'Microsoft.Powershell.DSC'. 
+Error message: "The DSC Extension received an incorrect input: The DSC configuration did not 
+produce any output files (*.mof files). Please check your configuration for errors. Also check 
+your configuration data (*.psd1 file) if you provided any..
+___
+13:58:50 - 1:58:43 PM - VM has reported a failure when processing extension 'Microsoft.Powershell.DSC'. 
+Error message: "The DSC Extension failed to execute: Mandatory parameter storageCredential is missing
