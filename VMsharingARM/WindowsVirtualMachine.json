@@ -9,20 +9,26 @@
         "description": "Username for the Virtual Machine."
       }
     },
-    "foldername": {
+    "servicenamecs1": {
       "type": "string",
-      "defaultValue": "foldernamejson1",
-      "allowedValues": [
-        "foldernamejson1",
-        "foldernamejson2",
-        "foldernamejson3",
-        "foldernamejson4"
-      ],
       "metadata": {
-        "description": "Name of folder creted by myscript"
+        "description":  "Name of service for myscript"
       }
     },
-    "adminPassword": {
+      "foldername": {
+        "type": "string",
+        "defaultValue": "foldernamejson1",
+        "allowedValues": [
+          "foldernamejson1",
+          "foldernamejson2",
+          "foldernamejson3",
+          "foldernamejson4"
+        ],
+        "metadata": {
+          "description": "Name of folder creted by myscript"
+        }
+      },
+      "adminPassword": {
         "type": "securestring",
         "metadata": {
           "description": "Password for the Virtual Machine."
@@ -564,7 +570,8 @@
                 "fileUris": [
                   "[concat(parameters('_artifactsLocation'), '/', variables('myscriptScriptFolder'), '/', variables('myscriptScriptFileName'), parameters('_artifactsLocationSasToken'))]"
                 ],
-                "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Bypass',' -File .\\CustomScripts\\myscript.ps1 ', parameters('foldername'))]"}
+                "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Bypass',' -File .\\CustomScripts\\myscript.ps1 ', parameters('foldername'), ' ', parameters('servicenamecs1'))]"
+              }
             }
           }
         ]
