@@ -5,7 +5,7 @@
     "adminUsername": {
       "value": "testN"
     },
-    "foldername": { "value": "foldernamejson2" },
+    "foldername": { "value": "foldernamejson1" },
     "servicenamecs1": { "value":  "spooler" },
     "dnsNameForPublicIP": {
       "value": "vmsharingdns"
