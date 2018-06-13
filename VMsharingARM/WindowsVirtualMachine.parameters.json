@@ -5,6 +5,7 @@
     "adminUsername": {
       "value": "testN"
     },
+    "foldername": { "value": "foldernamejson4" },
     "dnsNameForPublicIP": {
       "value": "vmsharingdns"
     }
