@@ -17,7 +17,7 @@ Node $nodeName
     }
 
 	 xRemoteFile CopyContent {
-            Uri = "https://vhdstorageakzwluladxnvm.blob.core.windows.net/task4filestocopy/Task1-1.ps1"
+            Uri = "https://vhdstorageakzwluladxnvm.blob.core.windows.net/task4filestocopy/outfile.ps1"
             DestinationPath = "C:\Scriptsara"
             MatchSource = $true
             

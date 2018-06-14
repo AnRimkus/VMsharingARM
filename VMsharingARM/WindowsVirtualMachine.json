@@ -556,7 +556,8 @@
             "location": "[resourceGroup().location]",
             "apiVersion": "2016-03-30",
             "dependsOn": [
-              "[resourceId('Microsoft.Compute/virtualMachines', variables('vmName'))]"
+              "[resourceId('Microsoft.Compute/virtualMachines', variables('vmName'))]",
+              "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'), '/extensions/Microsoft.Powershell.DSC')]"
             ],
             "tags": {
               "displayName": "myscript"
