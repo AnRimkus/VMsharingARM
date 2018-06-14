@@ -3,7 +3,6 @@ param (
 [string] $servicenamecs1
 ) 
 
-#mkdir c:\$foldername
 mkdir c:\foldername2
 
 if ((Get-Service -Name $servicenamecs1).status -eq "running"){ 
